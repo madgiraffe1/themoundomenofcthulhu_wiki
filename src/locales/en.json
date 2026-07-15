@@ -19,7 +19,15 @@
       "twitterDescription": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos."
     }
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "walkthrough": "Walkthrough",
+    "catches": "Catches",
+    "equipment": "Equipment",
+    "gallery": "Gallery",
+    "version": "Version",
+    "download": "Download"
+  },
   "common": {
     "home": "Home",
     "more": "More",
@@ -48,11 +56,11 @@
       },
       {
         "label": "Co-op Guide",
-        "href": "#co-op-guide"
+        "href": "/guide"
       },
       {
         "label": "Beginner Guide",
-        "href": "#beginner-guide"
+        "href": "/story/the-mound-omen-of-cthulhu-story"
       }
     ],
     "stats": [
@@ -94,7 +102,43 @@
     "title": "The Mound: Omen of Cthulhu",
     "titleHighlight": "Guide Modules",
     "subtitle": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos.",
-    "cards": []
+    "cards": [
+      {
+        "icon": "BookOpen",
+        "title": "Guide",
+        "description": "Guide articles for The Mound: Omen of Cthulhu."
+      },
+      {
+        "icon": "Route",
+        "title": "Walkthrough",
+        "description": "Walkthrough articles for The Mound: Omen of Cthulhu."
+      },
+      {
+        "icon": "Fish",
+        "title": "Catches",
+        "description": "Catches articles for The Mound: Omen of Cthulhu."
+      },
+      {
+        "icon": "Hammer",
+        "title": "Equipment",
+        "description": "Equipment articles for The Mound: Omen of Cthulhu."
+      },
+      {
+        "icon": "Images",
+        "title": "Gallery",
+        "description": "Gallery articles for The Mound: Omen of Cthulhu."
+      },
+      {
+        "icon": "Clock",
+        "title": "Version",
+        "description": "Version articles for The Mound: Omen of Cthulhu."
+      },
+      {
+        "icon": "Download",
+        "title": "Download",
+        "description": "Download articles for The Mound: Omen of Cthulhu."
+      }
+    ]
   },
   "modules": {},
   "faq": {
@@ -138,13 +182,154 @@
     "copyright": "© 2026 The Mound: Omen of Cthulhu Wiki. Unofficial fan resource.",
     "disclaimer": "Not affiliated with ACE Team, Nacon, Steam, or Valve."
   },
-  "pages": {},
+  "pages": {
+    "guide": {
+      "categoryLabel": "The Mound: Omen of Cthulhu Guide",
+      "title": "The Mound: Omen of Cthulhu Guide",
+      "description": "The Mound: Omen of Cthulhu guide articles using the original template category layout.",
+      "metaTitle": "The Mound: Omen of Cthulhu Guide - The Mound: Omen of Cthulhu Wiki",
+      "metaDescription": "The Mound: Omen of Cthulhu guide articles, guides, and source-safe notes.",
+      "whatIs": "What is The Mound: Omen of Cthulhu Guide?",
+      "whatIsDescription": "Guide pages collect The Mound: Omen of Cthulhu topics while preserving the original template category experience.",
+      "why": "Why read this guide section?",
+      "whySteps": {
+        "step1Title": "Same template structure",
+        "step1Description": "The category page, article cards, dropdown menu, and article detail page follow the original template layout.",
+        "step2Title": "Target-game content",
+        "step2Description": "The copy and article topics are written for The Mound: Omen of Cthulhu, not copied from the template game.",
+        "step3Title": "Safe updates",
+        "step3Description": "Guide claims can be revised as official pages, patch notes, and reliable gameplay evidence change."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Guide Articles"
+    },
+    "walkthrough": {
+      "categoryLabel": "The Mound: Omen of Cthulhu Walkthrough",
+      "title": "The Mound: Omen of Cthulhu Walkthrough",
+      "description": "The Mound: Omen of Cthulhu walkthrough articles using the original template category layout.",
+      "metaTitle": "The Mound: Omen of Cthulhu Walkthrough - The Mound: Omen of Cthulhu Wiki",
+      "metaDescription": "The Mound: Omen of Cthulhu walkthrough articles, guides, and source-safe notes.",
+      "whatIs": "What is The Mound: Omen of Cthulhu Walkthrough?",
+      "whatIsDescription": "Walkthrough pages collect The Mound: Omen of Cthulhu topics while preserving the original template category experience.",
+      "why": "Why read this walkthrough section?",
+      "whySteps": {
+        "step1Title": "Same template structure",
+        "step1Description": "The category page, article cards, dropdown menu, and article detail page follow the original template layout.",
+        "step2Title": "Target-game content",
+        "step2Description": "The copy and article topics are written for The Mound: Omen of Cthulhu, not copied from the template game.",
+        "step3Title": "Safe updates",
+        "step3Description": "Guide claims can be revised as official pages, patch notes, and reliable gameplay evidence change."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Walkthrough Articles"
+    },
+    "catches": {
+      "categoryLabel": "The Mound: Omen of Cthulhu Catches",
+      "title": "The Mound: Omen of Cthulhu Catches",
+      "description": "The Mound: Omen of Cthulhu catches articles using the original template category layout.",
+      "metaTitle": "The Mound: Omen of Cthulhu Catches - The Mound: Omen of Cthulhu Wiki",
+      "metaDescription": "The Mound: Omen of Cthulhu catches articles, guides, and source-safe notes.",
+      "whatIs": "What is The Mound: Omen of Cthulhu Catches?",
+      "whatIsDescription": "Catches pages collect The Mound: Omen of Cthulhu topics while preserving the original template category experience.",
+      "why": "Why read this catches section?",
+      "whySteps": {
+        "step1Title": "Same template structure",
+        "step1Description": "The category page, article cards, dropdown menu, and article detail page follow the original template layout.",
+        "step2Title": "Target-game content",
+        "step2Description": "The copy and article topics are written for The Mound: Omen of Cthulhu, not copied from the template game.",
+        "step3Title": "Safe updates",
+        "step3Description": "Guide claims can be revised as official pages, patch notes, and reliable gameplay evidence change."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Catches Articles"
+    },
+    "equipment": {
+      "categoryLabel": "The Mound: Omen of Cthulhu Equipment",
+      "title": "The Mound: Omen of Cthulhu Equipment",
+      "description": "The Mound: Omen of Cthulhu equipment articles using the original template category layout.",
+      "metaTitle": "The Mound: Omen of Cthulhu Equipment - The Mound: Omen of Cthulhu Wiki",
+      "metaDescription": "The Mound: Omen of Cthulhu equipment articles, guides, and source-safe notes.",
+      "whatIs": "What is The Mound: Omen of Cthulhu Equipment?",
+      "whatIsDescription": "Equipment pages collect The Mound: Omen of Cthulhu topics while preserving the original template category experience.",
+      "why": "Why read this equipment section?",
+      "whySteps": {
+        "step1Title": "Same template structure",
+        "step1Description": "The category page, article cards, dropdown menu, and article detail page follow the original template layout.",
+        "step2Title": "Target-game content",
+        "step2Description": "The copy and article topics are written for The Mound: Omen of Cthulhu, not copied from the template game.",
+        "step3Title": "Safe updates",
+        "step3Description": "Guide claims can be revised as official pages, patch notes, and reliable gameplay evidence change."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Equipment Articles"
+    },
+    "gallery": {
+      "categoryLabel": "The Mound: Omen of Cthulhu Gallery",
+      "title": "The Mound: Omen of Cthulhu Gallery",
+      "description": "The Mound: Omen of Cthulhu gallery articles using the original template category layout.",
+      "metaTitle": "The Mound: Omen of Cthulhu Gallery - The Mound: Omen of Cthulhu Wiki",
+      "metaDescription": "The Mound: Omen of Cthulhu gallery articles, guides, and source-safe notes.",
+      "whatIs": "What is The Mound: Omen of Cthulhu Gallery?",
+      "whatIsDescription": "Gallery pages collect The Mound: Omen of Cthulhu topics while preserving the original template category experience.",
+      "why": "Why read this gallery section?",
+      "whySteps": {
+        "step1Title": "Same template structure",
+        "step1Description": "The category page, article cards, dropdown menu, and article detail page follow the original template layout.",
+        "step2Title": "Target-game content",
+        "step2Description": "The copy and article topics are written for The Mound: Omen of Cthulhu, not copied from the template game.",
+        "step3Title": "Safe updates",
+        "step3Description": "Guide claims can be revised as official pages, patch notes, and reliable gameplay evidence change."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Gallery Articles"
+    },
+    "version": {
+      "categoryLabel": "The Mound: Omen of Cthulhu Version",
+      "title": "The Mound: Omen of Cthulhu Version",
+      "description": "The Mound: Omen of Cthulhu version articles using the original template category layout.",
+      "metaTitle": "The Mound: Omen of Cthulhu Version - The Mound: Omen of Cthulhu Wiki",
+      "metaDescription": "The Mound: Omen of Cthulhu version articles, guides, and source-safe notes.",
+      "whatIs": "What is The Mound: Omen of Cthulhu Version?",
+      "whatIsDescription": "Version pages collect The Mound: Omen of Cthulhu topics while preserving the original template category experience.",
+      "why": "Why read this version section?",
+      "whySteps": {
+        "step1Title": "Same template structure",
+        "step1Description": "The category page, article cards, dropdown menu, and article detail page follow the original template layout.",
+        "step2Title": "Target-game content",
+        "step2Description": "The copy and article topics are written for The Mound: Omen of Cthulhu, not copied from the template game.",
+        "step3Title": "Safe updates",
+        "step3Description": "Guide claims can be revised as official pages, patch notes, and reliable gameplay evidence change."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Version Articles"
+    },
+    "download": {
+      "categoryLabel": "The Mound: Omen of Cthulhu Download",
+      "title": "The Mound: Omen of Cthulhu Download",
+      "description": "The Mound: Omen of Cthulhu download articles using the original template category layout.",
+      "metaTitle": "The Mound: Omen of Cthulhu Download - The Mound: Omen of Cthulhu Wiki",
+      "metaDescription": "The Mound: Omen of Cthulhu download articles, guides, and source-safe notes.",
+      "whatIs": "What is The Mound: Omen of Cthulhu Download?",
+      "whatIsDescription": "Download pages collect The Mound: Omen of Cthulhu topics while preserving the original template category experience.",
+      "why": "Why read this download section?",
+      "whySteps": {
+        "step1Title": "Same template structure",
+        "step1Description": "The category page, article cards, dropdown menu, and article detail page follow the original template layout.",
+        "step2Title": "Target-game content",
+        "step2Description": "The copy and article topics are written for The Mound: Omen of Cthulhu, not copied from the template game.",
+        "step3Title": "Safe updates",
+        "step3Description": "Guide claims can be revised as official pages, patch notes, and reliable gameplay evidence change."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Download Articles"
+    }
+  },
   "home": {
     "latest": "Latest Guides",
     "categories": "Guide Modules",
     "all": "All Articles",
     "read": "Read guide",
-    "firstArticle": "/",
+    "firstArticle": "/guide/the-mound-omen-of-cthulhu-beginner-guide",
     "startTitle": "Start with The Mound: Omen of Cthulhu",
     "start": [
       {

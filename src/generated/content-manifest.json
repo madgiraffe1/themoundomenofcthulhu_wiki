@@ -1,3 +1,130 @@
 {
-  "en": {}
+  "en": {
+    "catches": [
+      {
+        "slug": "the-mound-omen-of-cthulhu-bestiary-tracker",
+        "file": "the-mound-omen-of-cthulhu-bestiary-tracker"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-creatures",
+        "file": "the-mound-omen-of-cthulhu-creatures"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-monsters",
+        "file": "the-mound-omen-of-cthulhu-monsters"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-threats",
+        "file": "the-mound-omen-of-cthulhu-threats"
+      }
+    ],
+    "download": [
+      {
+        "slug": "the-mound-omen-of-cthulhu-official-store-access",
+        "file": "the-mound-omen-of-cthulhu-official-store-access"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-platform-access",
+        "file": "the-mound-omen-of-cthulhu-platform-access"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-steam-page",
+        "file": "the-mound-omen-of-cthulhu-steam-page"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-wishlist-guide",
+        "file": "the-mound-omen-of-cthulhu-wishlist-guide"
+      }
+    ],
+    "equipment": [
+      {
+        "slug": "the-mound-omen-of-cthulhu-equipment-planning",
+        "file": "the-mound-omen-of-cthulhu-equipment-planning"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-loadout-notes",
+        "file": "the-mound-omen-of-cthulhu-loadout-notes"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-survival-tools",
+        "file": "the-mound-omen-of-cthulhu-survival-tools"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-team-roles",
+        "file": "the-mound-omen-of-cthulhu-team-roles"
+      }
+    ],
+    "gallery": [
+      {
+        "slug": "the-mound-omen-of-cthulhu-media-guide",
+        "file": "the-mound-omen-of-cthulhu-media-guide"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-official-images",
+        "file": "the-mound-omen-of-cthulhu-official-images"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-screenshots",
+        "file": "the-mound-omen-of-cthulhu-screenshots"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-trailer",
+        "file": "the-mound-omen-of-cthulhu-trailer"
+      }
+    ],
+    "guide": [
+      {
+        "slug": "the-mound-omen-of-cthulhu-beginner-guide",
+        "file": "the-mound-omen-of-cthulhu-beginner-guide"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-how-to-play",
+        "file": "the-mound-omen-of-cthulhu-how-to-play"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-source-safe-overview",
+        "file": "the-mound-omen-of-cthulhu-source-safe-overview"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-starter-checklist",
+        "file": "the-mound-omen-of-cthulhu-starter-checklist"
+      }
+    ],
+    "version": [
+      {
+        "slug": "the-mound-omen-of-cthulhu-news-tracker",
+        "file": "the-mound-omen-of-cthulhu-news-tracker"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-platforms",
+        "file": "the-mound-omen-of-cthulhu-platforms"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-release-date",
+        "file": "the-mound-omen-of-cthulhu-release-date"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-system-requirements",
+        "file": "the-mound-omen-of-cthulhu-system-requirements"
+      }
+    ],
+    "walkthrough": [
+      {
+        "slug": "the-mound-omen-of-cthulhu-co-op-route",
+        "file": "the-mound-omen-of-cthulhu-co-op-route"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-expedition-walkthrough",
+        "file": "the-mound-omen-of-cthulhu-expedition-walkthrough"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-objective-planning",
+        "file": "the-mound-omen-of-cthulhu-objective-planning"
+      },
+      {
+        "slug": "the-mound-omen-of-cthulhu-survival-route",
+        "file": "the-mound-omen-of-cthulhu-survival-route"
+      }
+    ]
+  }
 }

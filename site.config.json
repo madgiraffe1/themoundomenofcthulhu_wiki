@@ -1,0 +1,22 @@
+{
+  "templateParity": {
+    "required": true,
+    "templateProjectPath": "/Users/lichengjun/Downloads/code/0715/exquisitefishing_wiki",
+    "targetProjectPath": "/Users/lichengjun/Downloads/code/0715/themoundomenofcthulhu.online",
+    "categoryKeys": [
+      "guide",
+      "walkthrough",
+      "catches",
+      "equipment",
+      "gallery",
+      "version",
+      "download"
+    ],
+    "articleRoute": "src/app/[locale]/[...slug]/page.tsx",
+    "navigationComponent": "src/components/Navigation.tsx",
+    "navigationConfig": "src/config/navigation.ts",
+    "manifestGenerator": "scripts/generate-content-manifest.mjs",
+    "minimumArticlesPerCategory": 1,
+    "policy": "Preserve template category topology, dropdown navigation, mobile expandable navigation, category pages, article detail pages, and content manifest. Replace only project-specific content."
+  }
+}
