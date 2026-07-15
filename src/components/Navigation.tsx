@@ -95,9 +95,11 @@ export default function Navigation({ navPreviewData }: NavigationProps) {
 						href="/"
 						className="flex items-center space-x-2 hover:opacity-80 transition"
 					>
-						<div className="w-10 h-10 bg-[hsl(var(--nav-theme))] rounded-lg flex items-center justify-center font-bold text-xl">
-							E
-						</div>
+						<img
+							src="/images/logo.png"
+							alt="The Mound: Omen of Cthulhu icon"
+							className="h-10 w-10 rounded-lg object-cover ring-1 ring-border"
+						/>
 						<span className="font-bold text-lg hidden sm:inline">The Mound: Omen of Cthulhu</span>
 						<span className="font-bold text-lg sm:hidden">Mound</span>
 					</Link>

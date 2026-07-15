@@ -70,7 +70,85 @@ function validateSiteIconAssets() {
     process.exit(1)
   }
 
+  const manifestPath = path.join(root, 'public/manifest.json')
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+  const expectedManifestIcons = new Map(requiredPngs
+    .filter(([relativePath]) => relativePath !== 'public/images/logo.png' && relativePath !== 'public/site-icon.png')
+    .map(([relativePath, width, height]) => [`/${path.basename(relativePath)}`, `${width}x${height}`]))
+  const manifestIcons = new Map((manifest.icons || []).map((icon) => [icon.src, icon]))
+  for (const [src, sizes] of expectedManifestIcons) {
+    const icon = manifestIcons.get(src)
+    if (!icon) {
+      console.error(`❌ manifest.json is missing icon entry: ${src}`)
+      process.exit(1)
+    }
+    if (icon.sizes !== sizes || icon.type !== 'image/png') {
+      console.error(`❌ manifest.json icon ${src} must be ${sizes} image/png`)
+      process.exit(1)
+    }
+  }
+
+  const navigationPath = path.join(root, 'src/components/Navigation.tsx')
+  const navigationSource = fs.readFileSync(navigationPath, 'utf8')
+  if (!navigationSource.includes('src="/images/logo.png"')) {
+    console.error('❌ Navigation header must render /images/logo.png')
+    process.exit(1)
+  }
+  if (navigationSource.includes('font-bold text-xl">\\n\\t\\t\\t\\t\\t\\t\\tE') || navigationSource.includes('font-bold text-xl">E')) {
+    console.error('❌ Navigation header still contains the template letter icon')
+    process.exit(1)
+  }
+
   console.log('✅ Site icon assets are present, sized, and non-default!\n')
+}
+
+function walkFiles(dir, predicate) {
+  const files = []
+  if (!fs.existsSync(dir)) return files
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const fullPath = path.join(dir, entry.name)
+    if (entry.isDirectory()) {
+      files.push(...walkFiles(fullPath, predicate))
+    } else if (predicate(fullPath)) {
+      files.push(fullPath)
+    }
+  }
+  return files
+}
+
+function validateBuiltNavigation() {
+  console.log('🔍 Validating built navigation icon...\n')
+
+  const root = path.join(__dirname, '..')
+  const chunksDir = path.join(root, 'out/_next/static/chunks/app')
+  const chunks = walkFiles(chunksDir, (filePath) => filePath.endsWith('.js'))
+  if (chunks.length === 0) {
+    console.error('❌ Built app chunks not found; run next build and static export first')
+    process.exit(1)
+  }
+
+  let foundLogo = false
+  let foundTemplateLetter = false
+  for (const chunk of chunks) {
+    const source = fs.readFileSync(chunk, 'utf8')
+    if (source.includes('src:"/images/logo.png"') || source.includes('src="/images/logo.png"')) {
+      foundLogo = true
+    }
+    if (source.includes('font-bold text-xl",children:"E"') || source.includes('children:"E"')) {
+      foundTemplateLetter = true
+    }
+  }
+
+  if (!foundLogo) {
+    console.error('❌ Built navigation bundle does not render /images/logo.png')
+    process.exit(1)
+  }
+  if (foundTemplateLetter) {
+    console.error('❌ Built navigation bundle still contains the template letter icon')
+    process.exit(1)
+  }
+
+  console.log('✅ Built navigation renders the site logo image!\n')
 }
 
 /**
@@ -189,3 +267,7 @@ validateIcons().catch(err => {
   console.error('❌ Validation failed:', err)
   process.exit(1)
 })
+
+if (process.argv.includes('--built')) {
+  validateBuiltNavigation()
+}
