@@ -10,34 +10,34 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 186 62% 39%;
+    --primary: 154 34% 30%;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 186 68% 52%;
+    --accent: 154 38% 34%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 186 62% 39%;
+    --ring: 154 34% 30%;
     --radius: 0.5rem;
-    --chart-1: 186 62% 39%;
-    --chart-2: 186 68% 52%;
-    --chart-3: 186 62% 28%;
-    --chart-4: 186 55% 60%;
-    --chart-5: 186 60% 45%;
+    --chart-1: 154 34% 30%;
+    --chart-2: 154 38% 34%;
+    --chart-3: 154 34% 38%;
+    --chart-4: 154 42% 60%;
+    --chart-5: 154 34% 30%;
 
     /* 导航页主题色 - 亮色主题 */
-    --nav-theme: 154 34% 34%;        /* ocean cyan */
-    --nav-theme-light: 43 78% 54%;  /* 浅青色 */
+    --nav-theme: 154 34% 30%;
+    --nav-theme-light: 154 38% 34%;
     
     /* Callout 组件颜色 */
-    --callout-info-bg: 217 91% 97%;  /* blue-50 */
-    --callout-info-border: 217 91% 85%;  /* blue-200 */
-    --callout-info-text: 217 91% 30%;  /* blue-900 */
+    --callout-info-bg: 217 91% 97%;  /* themed info light background */
+    --callout-info-border: 217 91% 85%;  /* themed info light border */
+    --callout-info-text: 217 91% 30%;  /* themed info light text */
     --callout-warning-bg: 45 93% 97%;  /* yellow-50 */
     --callout-warning-border: 45 93% 85%;  /* yellow-200 */
     --callout-warning-text: 45 93% 30%;  /* yellow-900 */
@@ -56,33 +56,33 @@
     --card-foreground: 0 0% 98%;
     --popover: 220 25% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 186 62% 39%;
+    --primary: 154 34% 38%;
     --primary-foreground: 0 0% 98%;
     --secondary: 220 20% 12%;
     --secondary-foreground: 0 0% 98%;
     --muted: 220 20% 15%;
     --muted-foreground: 220 10% 60%;
-    --accent: 186 68% 52%;
+    --accent: 154 42% 60%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 220 20% 15%;
     --input: 220 20% 15%;
-    --ring: 186 62% 39%;
-    --chart-1: 186 62% 39%;
-    --chart-2: 186 68% 52%;
-    --chart-3: 186 62% 28%;
-    --chart-4: 186 55% 60%;
-    --chart-5: 186 60% 45%;
+    --ring: 154 34% 38%;
+    --chart-1: 154 34% 30%;
+    --chart-2: 154 38% 34%;
+    --chart-3: 154 34% 38%;
+    --chart-4: 154 42% 60%;
+    --chart-5: 154 34% 30%;
 
     /* 导航页主题色 - 暗色主题 */
-    --nav-theme: 154 34% 34%;        /* bright ocean cyan */
-    --nav-theme-light: 43 78% 54%;  /* 高亮青色 */
+    --nav-theme: 154 34% 38%;
+    --nav-theme-light: 154 42% 60%;
 
     /* Callout 组件颜色 - 暗色主题 */
-    --callout-info-bg: 217 91% 22%;  /* 更浅的深蓝色（模拟 blue-900/20） */
-    --callout-info-border: 217 91% 50%;  /* 中等蓝色（模拟 blue-500/30） */
-    --callout-info-text: 217 91% 75%;  /* 浅蓝色（blue-300） */
+    --callout-info-bg: 217 91% 22%;  /* themed info dark background */
+    --callout-info-border: 217 91% 50%;  /* themed info dark border */
+    --callout-info-text: 217 91% 75%;  /* themed info dark text */
     --callout-warning-bg: 45 93% 22%;  /* 更浅的深黄色 */
     --callout-warning-border: 45 93% 45%;  /* 深黄色（yellow-700） */
     --callout-warning-text: 45 93% 75%;  /* 浅黄色 */
@@ -174,22 +174,22 @@
 
   /* 链接样式 - 确保在深色背景下清晰可见 */
   .prose a {
-    color: #3b82f6 !important; /* blue-500 */
+    color: hsl(var(--nav-theme-light)) !important;
     text-decoration: underline;
     text-underline-offset: 2px;
     transition: color 0.2s;
   }
 
   .prose a:hover {
-    color: #2563eb !important; /* blue-600 */
+    color: hsl(var(--nav-theme)) !important;
   }
 
   .dark .prose a {
-    color: #60a5fa !important; /* blue-400 */
+    color: hsl(var(--nav-theme-light)) !important;
   }
 
   .dark .prose a:hover {
-    color: #93c5fd !important; /* blue-300 */
+    color: hsl(var(--nav-theme-light)) !important;
   }
 
   /* 表格样式 - 表头和单元格居中 */

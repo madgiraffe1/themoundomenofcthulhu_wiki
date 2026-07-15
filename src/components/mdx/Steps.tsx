@@ -19,7 +19,7 @@ interface StepProps {
 export function Step({ num, title, children }: StepProps) {
   return (
     <div className="flex gap-4 items-center">
-      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-base">
+      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[hsl(var(--nav-theme))] text-white flex items-center justify-center font-bold text-base">
         {num}
       </div>
       <div className="flex-1">

@@ -10,14 +10,14 @@ export function Callout({ type = 'info', title, children }: CalloutProps) {
   const styles = {
     // 亮色主题样式
     light: {
-      info: 'bg-blue-50 border-blue-200 text-blue-900',
+      info: 'bg-[hsl(var(--nav-theme)/0.08)] border-[hsl(var(--nav-theme)/0.25)] text-[hsl(var(--nav-theme-light))]',
       warning: 'bg-yellow-50 border-yellow-200 text-yellow-900',
       success: 'bg-emerald-50 border-emerald-200 text-emerald-900',
       tip: 'bg-green-50 border-green-200 text-green-900',
     },
     // 暗色主题样式 - 使用半透明效果
     dark: {
-      info: 'dark:bg-blue-900/20 dark:border-blue-500/30 dark:text-blue-300',
+      info: 'dark:bg-[hsl(var(--nav-theme)/0.18)] dark:border-[hsl(var(--nav-theme)/0.35)] dark:text-[hsl(var(--nav-theme-light))]',
       warning: 'dark:bg-yellow-900/20 dark:border-yellow-700/50 dark:text-yellow-200',
       success: 'dark:bg-emerald-900/20 dark:border-emerald-500/30 dark:text-emerald-300',
       tip: 'dark:bg-green-900/20 dark:border-green-500/30 dark:text-green-300',

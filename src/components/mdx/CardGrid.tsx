@@ -24,7 +24,7 @@ interface CardProps {
 
 export function Card({ title, children }: CardProps) {
   return (
-    <div className="bg-card border border-border rounded-xl p-6 hover:border-blue-500 transition-colors">
+    <div className="bg-card border border-border rounded-xl p-6 hover:border-[hsl(var(--nav-theme))] transition-colors">
       <h3 className="text-xl font-bold text-foreground mb-3">{title}</h3>
       <div className="text-muted-foreground">{children}</div>
     </div>

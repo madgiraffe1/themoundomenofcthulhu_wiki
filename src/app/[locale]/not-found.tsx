@@ -14,7 +14,7 @@ export default function NotFound() {
 				<p className="text-slate-400 mb-8">{t('notFoundDescription')}</p>
 				<Link
 					href="/"
-					className="inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors"
+					className="inline-block px-6 py-3 bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white rounded-lg transition-colors"
 				>
 					{t('backToHome')}
 				</Link>

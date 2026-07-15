@@ -59,12 +59,12 @@ export function Checklist({ id, title, items }: ChecklistProps) {
           <li key={index} className="flex items-start gap-3">
             <button
               onClick={() => toggleItem(index)}
-              className="flex-shrink-0 w-5 h-5 mt-0.5 rounded border-2 border-muted-foreground hover:border-blue-400 transition-colors flex items-center justify-center cursor-pointer"
+              className="flex-shrink-0 w-5 h-5 mt-0.5 rounded border-2 border-muted-foreground hover:border-[hsl(var(--nav-theme-light))] transition-colors flex items-center justify-center cursor-pointer"
               aria-label={checkedItems.has(index) ? 'Uncheck item' : 'Check item'}
             >
               {checkedItems.has(index) && (
                 <svg
-                  className="w-4 h-4 text-blue-400"
+                  className="w-4 h-4 text-[hsl(var(--nav-theme-light))]"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"

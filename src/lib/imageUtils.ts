@@ -65,7 +65,7 @@ export function hexToRgb(hex: string): { r: number; g: number; b: number } | nul
 export function getTailwindRgbString(hex: string): string {
 	const rgb = hexToRgb(hex)
 	if (!rgb) {
-		return '59 130 246' // 默认 blue-500
+		return '120 120 120' // neutral fallback
 	}
 	return `${rgb.r} ${rgb.g} ${rgb.b}`
 }

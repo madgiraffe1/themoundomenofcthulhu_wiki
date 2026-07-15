@@ -19,7 +19,7 @@ export function CTAButtons({ buttons }: CTAButtonsProps) {
           href={button.href}
           className={`px-6 py-3 rounded-xl font-bold transition ${
             button.variant === 'primary'
-              ? 'bg-blue-500 hover:bg-blue-600 text-white'
+              ? 'bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white'
               : 'bg-secondary hover:bg-secondary/80 text-foreground'
           }`}
         >

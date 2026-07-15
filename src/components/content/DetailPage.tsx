@@ -202,7 +202,7 @@ export async function DetailPage({
         <div className="border-t border-border pt-10 mt-10 md:pt-12 md:mt-12">
           <Link
             href={`/${contentType}`}
-            className="inline-flex items-center gap-2 rounded-lg bg-blue-500 px-5 py-3 text-sm md:text-base text-white font-semibold transition-colors hover:bg-blue-600"
+            className="inline-flex items-center gap-2 rounded-lg bg-[hsl(var(--nav-theme))] px-5 py-3 text-sm md:text-base text-white font-semibold transition-colors hover:bg-[hsl(var(--nav-theme)/0.9)]"
           >
             <ArrowLeft className="w-4 h-4" />
             {t("common.more")} {contentTypeLabels[contentType] || contentType}

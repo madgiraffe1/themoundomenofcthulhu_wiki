@@ -18,5 +18,35 @@
     "manifestGenerator": "scripts/generate-content-manifest.mjs",
     "minimumArticlesPerCategory": 1,
     "policy": "Preserve template category topology, dropdown navigation, mobile expandable navigation, category pages, article detail pages, and content manifest. Replace only project-specific content."
+  },
+  "theme": {
+    "required": true,
+    "source": "Project branding from Steam/Nacon horror-green palette",
+    "light": {
+      "primary": "154 34% 30%",
+      "accent": "154 38% 34%",
+      "ring": "154 34% 30%",
+      "navTheme": "154 34% 30%",
+      "navThemeLight": "154 38% 34%"
+    },
+    "dark": {
+      "primary": "154 34% 38%",
+      "accent": "154 42% 60%",
+      "ring": "154 34% 38%",
+      "navTheme": "154 34% 38%",
+      "navThemeLight": "154 42% 60%"
+    },
+    "tokenPolicy": "All brand/accent UI uses --nav-theme, --nav-theme-light, --primary, --accent, or --ring. Hardcoded default blue/cyan classes are forbidden unless recorded as semantic status colors.",
+    "semanticExceptions": [
+      "warning",
+      "success",
+      "destructive",
+      "neutral-muted"
+    ],
+    "inspectedSurfaces": [
+      "homepage light/dark",
+      "category page light/dark",
+      "article page light/dark"
+    ]
   }
 }

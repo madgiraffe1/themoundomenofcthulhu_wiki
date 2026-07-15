@@ -23,7 +23,7 @@ interface RarityTiersProps {
 export default function RarityTiers({ title, titleHighlight, subtitle, tiers }: RarityTiersProps) {
   const rarityData = [
     { ...tiers.common, color: 'bg-gray-500' },
-    { ...tiers.rare, color: 'bg-blue-500' },
+    { ...tiers.rare, color: 'bg-[hsl(var(--nav-theme))]' },
     { ...tiers.epic, color: 'bg-purple-500' },
     { ...tiers.legendary, color: 'bg-orange-500' },
     { ...tiers.mythic, color: 'bg-red-500' },
