@@ -1,0 +1,409 @@
+{
+  "site": {
+    "name": "The Mound: Omen of Cthulhu Wiki",
+    "shortName": "MOOC",
+    "game": "The Mound: Omen of Cthulhu",
+    "platform": "Steam / PC / Console",
+    "officialUrl": "https://store.steampowered.com/app/2569760/The_Mound_Omen_of_Cthulhu/",
+    "description": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos.",
+    "legalNotice": "Unofficial fan guide for The Mound: Omen of Cthulhu."
+  },
+  "seo": {
+    "home": {
+      "title": "The Mound: Omen of Cthulhu Wiki - Co-op Guide & Release Info",
+      "description": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos.",
+      "keywords": "The Mound: Omen of Cthulhu, The Mound: Omen of Cthulhu wiki, The Mound: Omen of Cthulhu guide, Steam / PC / Console",
+      "ogTitle": "The Mound: Omen of Cthulhu Wiki",
+      "ogDescription": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos.",
+      "twitterTitle": "The Mound: Omen of Cthulhu Wiki",
+      "twitterDescription": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos."
+    }
+  },
+  "nav": {},
+  "common": {
+    "home": "Home",
+    "more": "More",
+    "playNow": "View on Steam",
+    "switchLanguage": "Switch language",
+    "switchTheme": "Switch theme",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode",
+    "notFound": "Not found",
+    "notFoundDescription": "The page you are looking for does not exist.",
+    "backToHome": "Back to home",
+    "relatedArticles": "Related articles",
+    "readMore": "Read more",
+    "articlesComingSoon": "Articles coming soon"
+  },
+  "hero": {
+    "badge": "Lovecraftian Co-op Expedition Guide",
+    "title": "The Mound: Omen of Cthulhu Wiki",
+    "description": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos.",
+    "getFreeCodesCTA": "Co-op Guide",
+    "playOnRobloxCTA": "View on Steam",
+    "ctas": [
+      {
+        "label": "View on Steam",
+        "href": "https://store.steampowered.com/app/2569760/The_Mound_Omen_of_Cthulhu/"
+      },
+      {
+        "label": "Co-op Guide",
+        "href": "#co-op-guide"
+      },
+      {
+        "label": "Beginner Guide",
+        "href": "#beginner-guide"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Developer",
+        "value": "ACE Team"
+      },
+      {
+        "label": "Publisher",
+        "value": "Nacon"
+      },
+      {
+        "label": "Genre",
+        "value": "Action / Adventure"
+      },
+      {
+        "label": "Co-op",
+        "value": "Up to 4 players"
+      },
+      {
+        "label": "Release Date",
+        "value": "Jul 15, 2026"
+      },
+      {
+        "label": "Steam App ID",
+        "value": "2569760"
+      }
+    ]
+  },
+  "video": {
+    "id": "5d1e90FvlsE",
+    "title": "The Mound: Omen of Cthulhu | Gameplay Overview"
+  },
+  "gameFeature": {
+    "title": "The Mound: Omen of Cthulhu Gameplay",
+    "description": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos."
+  },
+  "tools": {
+    "title": "The Mound: Omen of Cthulhu",
+    "titleHighlight": "Guide Modules",
+    "subtitle": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos.",
+    "cards": []
+  },
+  "modules": {},
+  "faq": {
+    "title": "The Mound: Omen of Cthulhu FAQ",
+    "subtitle": "Common questions about The Mound: Omen of Cthulhu.",
+    "items": [
+      {
+        "question": "What is The Mound: Omen of Cthulhu?",
+        "answer": "It is a Lovecraftian action-adventure expedition game from ACE Team and Nacon with online co-op and a cursed jungle setting."
+      },
+      {
+        "question": "Is The Mound: Omen of Cthulhu a Roblox game?",
+        "answer": "No. This project is handled as a Steam / PC / Console game, not as a Roblox experience."
+      },
+      {
+        "question": "Is the release date final?",
+        "answer": "The current source package records Steam listing Jul 15, 2026 with coming_soon=true at retrieval, so release status should be rechecked before launch claims are finalized."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start reading The Mound: Omen of Cthulhu guides",
+    "description": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos.",
+    "exploreGuides": "Explore modules",
+    "joinGame": "View on Steam"
+  },
+  "footer": {
+    "title": "The Mound: Omen of Cthulhu Wiki",
+    "description": "Form a team of explorers, enter a cursed jungle, and search for treasure while monstrous forces bend reality around you. Use this guide hub for release status, co-op basics, survival tips, enemy notes, achievements, and official videos.",
+    "resources": "Resources",
+    "community": "Community",
+    "legal": "Legal",
+    "twitter": "Nacon",
+    "steam": "Steam",
+    "steamGuide": "Steam Page",
+    "itchio": "Nacon Page",
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyrightNotice": "Copyright",
+    "copyright": "© 2026 The Mound: Omen of Cthulhu Wiki. Unofficial fan resource.",
+    "disclaimer": "Not affiliated with ACE Team, Nacon, Steam, or Valve."
+  },
+  "pages": {},
+  "home": {
+    "latest": "Latest Guides",
+    "categories": "Guide Modules",
+    "all": "All Articles",
+    "read": "Read guide",
+    "firstArticle": "/",
+    "startTitle": "Start with The Mound: Omen of Cthulhu",
+    "start": [
+      {
+        "title": "The Mound: Omen of Cthulhu Beginner Guide",
+        "description": "Understand exploration, survival, sanity pressure, and basic expedition goals."
+      },
+      {
+        "title": "The Mound: Omen of Cthulhu Co-op Guide",
+        "description": "Prepare for up-to-four-player online co-op and team roles."
+      },
+      {
+        "title": "The Mound: Omen of Cthulhu Monsters",
+        "description": "Track confirmed monster and reality-alteration information without inventing a bestiary."
+      },
+      {
+        "title": "The Mound: Omen of Cthulhu Release Info",
+        "description": "Check Steam status, platforms, developer, publisher, and official entry points."
+      }
+    ],
+    "modulesTitle": "The Mound: Omen of Cthulhu Guide Modules",
+    "modulesDescription": "Use these sections for official release information, co-op basics, survival planning, and update-aware guide planning.",
+    "modules": [
+      {
+        "id": "release-info",
+        "name": "The Mound: Omen of Cthulhu Release Info",
+        "displayType": "card-list",
+        "description": "Summarize Steam status, platforms, developer, publisher, and official links.",
+        "highlights": [
+          {
+            "label": "Steam App ID",
+            "detail": "2569760"
+          },
+          {
+            "label": "Release Date",
+            "detail": "Jul 15, 2026"
+          },
+          {
+            "label": "Coming Soon",
+            "detail": "true at retrieval"
+          },
+          {
+            "label": "Developer / Publisher",
+            "detail": "ACE Team / Nacon"
+          }
+        ]
+      },
+      {
+        "id": "beginner-guide",
+        "name": "The Mound: Omen of Cthulhu Beginner Guide",
+        "displayType": "step-by-step",
+        "description": "Start with the official expedition premise and survival priorities.",
+        "highlights": [
+          {
+            "label": "1",
+            "detail": "Form a group of explorers"
+          },
+          {
+            "label": "2",
+            "detail": "Search for treasure in a cursed jungle"
+          },
+          {
+            "label": "3",
+            "detail": "Watch for danger and monstrous creatures"
+          },
+          {
+            "label": "4",
+            "detail": "Stay clear-headed while the jungle threatens the team"
+          }
+        ]
+      },
+      {
+        "id": "co-op-guide",
+        "name": "The Mound: Omen of Cthulhu Co-op Guide",
+        "displayType": "card-list",
+        "description": "Prepare for online co-op and group play.",
+        "highlights": [
+          {
+            "label": "Party Size",
+            "detail": "Up to four players"
+          },
+          {
+            "label": "Online Co-op",
+            "detail": "Listed by Steam categories"
+          },
+          {
+            "label": "Multiplayer",
+            "detail": "Listed by Steam categories"
+          },
+          {
+            "label": "Team Focus",
+            "detail": "Explorers enter danger as a group"
+          }
+        ]
+      },
+      {
+        "id": "survival-guide",
+        "name": "The Mound: Omen of Cthulhu Survival Guide",
+        "displayType": "step-by-step",
+        "description": "Stay alive while the jungle and reality pressure the team.",
+        "highlights": [
+          {
+            "label": "1",
+            "detail": "Enter a cursed jungle"
+          },
+          {
+            "label": "2",
+            "detail": "Expect danger everywhere"
+          },
+          {
+            "label": "3",
+            "detail": "Stay clear-headed"
+          },
+          {
+            "label": "4",
+            "detail": "Tame the jungle before it devours you"
+          }
+        ]
+      },
+      {
+        "id": "monsters",
+        "name": "The Mound: Omen of Cthulhu Monsters",
+        "displayType": "card-list",
+        "description": "Track confirmed monster and reality information without making up a full enemy list.",
+        "highlights": [
+          {
+            "label": "Monsters",
+            "detail": "Monstrous creatures are confirmed"
+          },
+          {
+            "label": "Reality Alteration",
+            "detail": "Creatures alter reality"
+          },
+          {
+            "label": "Danger",
+            "detail": "Danger is everywhere in the jungle"
+          },
+          {
+            "label": "Full Bestiary",
+            "detail": "Exact enemy list needs later confirmation"
+          }
+        ]
+      },
+      {
+        "id": "jungle-exploration",
+        "name": "The Mound: Omen of Cthulhu Jungle Exploration",
+        "displayType": "card-list",
+        "description": "Connect exploration, treasure, map uncertainty, and survival objectives.",
+        "highlights": [
+          {
+            "label": "Expedition",
+            "detail": "Explorers search for treasure"
+          },
+          {
+            "label": "Setting",
+            "detail": "Cursed jungle"
+          },
+          {
+            "label": "Navigation",
+            "detail": "Map layout needs later confirmation"
+          },
+          {
+            "label": "Objective",
+            "detail": "Treasure search and survival"
+          }
+        ]
+      },
+      {
+        "id": "achievements",
+        "name": "The Mound: Omen of Cthulhu Achievements",
+        "displayType": "card-list",
+        "description": "Track platform features and later achievement details.",
+        "highlights": [
+          {
+            "label": "Steam Achievements",
+            "detail": "Supported"
+          },
+          {
+            "label": "Steam Cloud",
+            "detail": "Supported"
+          },
+          {
+            "label": "Controller Support",
+            "detail": "Full controller support listed"
+          },
+          {
+            "label": "Achievement List",
+            "detail": "Exact list needs later confirmation"
+          }
+        ]
+      },
+      {
+        "id": "videos-updates",
+        "name": "The Mound: Omen of Cthulhu Videos and Updates",
+        "displayType": "card-list",
+        "description": "Collect official video and update entry points.",
+        "highlights": [
+          {
+            "label": "Gameplay Overview",
+            "detail": "Official video selected for homepage"
+          },
+          {
+            "label": "Nacon Page",
+            "detail": "Official game page reviewed"
+          },
+          {
+            "label": "Steam News",
+            "detail": "Use for future updates"
+          },
+          {
+            "label": "Release Watch",
+            "detail": "Recheck before publishing final launch claims"
+          }
+        ]
+      }
+    ],
+    "aboutTitle": "What is The Mound: Omen of Cthulhu?",
+    "about": [
+      "The Mound: Omen of Cthulhu is an action-adventure game from ACE Team and Nacon. Steam describes it as an up-to-four-player co-op expedition where explorers search for treasure in a cursed jungle.",
+      "The official description emphasizes danger, monstrous creatures, reality alteration, and the need to stay clear-headed while surviving the jungle."
+    ],
+    "facts": [
+      {
+        "label": "Developer",
+        "value": "ACE Team"
+      },
+      {
+        "label": "Publisher",
+        "value": "Nacon"
+      },
+      {
+        "label": "Genre",
+        "value": "Action / Adventure"
+      },
+      {
+        "label": "Co-op",
+        "value": "Up to 4 players"
+      },
+      {
+        "label": "Release Date",
+        "value": "Jul 15, 2026"
+      },
+      {
+        "label": "Steam App ID",
+        "value": "2569760"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is The Mound: Omen of Cthulhu?",
+        "answer": "It is a Lovecraftian action-adventure expedition game from ACE Team and Nacon with online co-op and a cursed jungle setting."
+      },
+      {
+        "question": "Is The Mound: Omen of Cthulhu a Roblox game?",
+        "answer": "No. This project is handled as a Steam / PC / Console game, not as a Roblox experience."
+      },
+      {
+        "question": "Is the release date final?",
+        "answer": "The current source package records Steam listing Jul 15, 2026 with coming_soon=true at retrieval, so release status should be rechecked before launch claims are finalized."
+      }
+    ]
+  }
+}

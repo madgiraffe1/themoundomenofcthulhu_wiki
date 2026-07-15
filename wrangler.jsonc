@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "the-mound-omen-of-cthulhu-wiki",
+  "compatibility_date": "2025-03-10",
+  "pages_build_output_dir": "./out",
+  "assets": {
+    "directory": "./out",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "themoundomenofcthulhu.online/*", "zone_name": "themoundomenofcthulhu.online" },
+    { "pattern": "www.themoundomenofcthulhu.online/*", "zone_name": "themoundomenofcthulhu.online" }
+  ]
+}
