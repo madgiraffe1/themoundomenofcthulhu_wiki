@@ -110,10 +110,16 @@ export default async function LocaleLayout({ children, params }: Props) {
   // 获取翻译消息
   const messages = await getMessages();
   const navPreviewData = await getNavPreviewData(locale as Language);
+  const googleSiteVerification =
+    process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+    process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 
 	return (
 		<html lang={locale} className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
 			<head>
+				{googleSiteVerification ? (
+					<meta name="google-site-verification" content={googleSiteVerification} />
+				) : null}
 				{process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ? (
 					<>
 						<meta name="google-adsense-account" content={process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID} />
