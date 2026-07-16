@@ -147,13 +147,13 @@ export function AdBanner({
   const config = AD_CONFIGS[type];
 
   return (
-    <div className={`flex justify-center ${className}`}>
+    <div className={`flex w-full justify-center ${className}`}>
       <div
         ref={containerRef}
         className="overflow-hidden rounded-xl"
         style={{
-          maxWidth: `${config.width}px`,
-          width: "100%",
+          width: `${config.width}px`,
+          maxWidth: "100%",
           minHeight: `${config.height}px`,
         }}
       />
