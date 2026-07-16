@@ -36,7 +36,8 @@ export function NativeBannerAd({ adKey, className = "" }: NativeBannerAdProps) {
     script.setAttribute("data-cfasync", "false");
     const nativeHost =
       process.env.NEXT_PUBLIC_AD_NATIVE_HOST ||
-      "pl28666083.effectivegatecpm.com";
+      process.env.NEXT_PUBLIC_AD_SCRIPT_HOST ||
+      "ruffianattorneymargarine.com";
     script.src = `https://${nativeHost}/${adKey}/invoke.js`;
 
     container.appendChild(script);

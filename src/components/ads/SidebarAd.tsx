@@ -31,6 +31,8 @@ const AD_CONFIGS = {
 
 // 广告加载超时时间（毫秒）
 const AD_LOAD_TIMEOUT_MS = 8000;
+const AD_SCRIPT_HOST =
+  process.env.NEXT_PUBLIC_AD_SCRIPT_HOST || "ruffianattorneymargarine.com";
 
 // 全局队列类型定义
 interface HighPerformanceWindow extends Window {
@@ -105,7 +107,7 @@ export function SidebarAd({ type, className = "", adKey }: SidebarAdProps) {
 
           const invokeScript = document.createElement("script");
           invokeScript.type = "text/javascript";
-          invokeScript.src = `https://www.highperformanceformat.com/${adKey}/invoke.js`;
+          invokeScript.src = `https://${AD_SCRIPT_HOST}/${adKey}/invoke.js`;
           invokeScript.async = true;
 
           invokeScript.onload = () => {

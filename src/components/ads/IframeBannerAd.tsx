@@ -2,6 +2,9 @@
 
 import { useEffect, useRef } from 'react'
 
+const AD_SCRIPT_HOST =
+  process.env.NEXT_PUBLIC_AD_SCRIPT_HOST || 'ruffianattorneymargarine.com'
+
 interface IframeBannerAdProps {
   adKey: string
   width: number
@@ -38,7 +41,7 @@ export function IframeBannerAd({ adKey, width, height, className = '' }: IframeB
     // 创建广告加载脚本
     const adScript = document.createElement('script')
     adScript.type = 'text/javascript'
-    adScript.src = `https://www.highperformanceformat.com/${adKey}/invoke.js`
+    adScript.src = `https://${AD_SCRIPT_HOST}/${adKey}/invoke.js`
 
     // 按顺序添加脚本
     container.appendChild(configScript)
