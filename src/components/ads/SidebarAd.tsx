@@ -156,7 +156,6 @@ export function SidebarAd({ type, className = "", adKey }: SidebarAdProps) {
         className="overflow-hidden rounded-xl"
         style={{
           width: `${config.width}px`,
-          minHeight: `${config.height}px`,
         }}
       />
     </div>

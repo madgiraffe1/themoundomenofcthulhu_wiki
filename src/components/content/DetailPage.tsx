@@ -12,6 +12,7 @@ import { extractPrimaryKeyword } from "@/lib/utils";
 import { SidebarAd } from "@/components/ads/SidebarAd";
 import { AdBanner } from "@/components/ads";
 import { DismissibleStickyBanner } from "@/components/ads/DismissibleStickyBanner";
+import { ArticleFooterAds } from "@/components/ads/ArticleFooterAds";
 import {
   getPreferredMobileBannerSelection,
   getPreferredMobileContentSelection,
@@ -160,8 +161,10 @@ export async function DetailPage({
         </div>
       </section>
 
-      {/* Wiki Team 下方常驻广告：跟随页面滚动持续显示，可手动关闭 */}
-      <DismissibleStickyBanner adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
+      {/* Mobile sticky ad: keep it off desktop so the close button never floats alone. */}
+      <div className="md:hidden">
+        <DismissibleStickyBanner adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
+      </div>
 
       {/* 左侧广告容器 - Fixed 定位 */}
       <aside
@@ -209,30 +212,10 @@ export async function DetailPage({
           </Link>
         </div>
 
-        {/* 文章底部广告区域 */}
-        <div className="hidden md:block border-t border-border pt-12 mt-12 space-y-8">
-          <div className="text-center text-sm text-muted-foreground mb-4">
-            Advertisement
-          </div>
-
-          {/* 广告 1: 728×90 横幅 */}
-          <AdBanner
-            type="banner-728x90"
-            adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90}
-          />
-
-          {/* 广告 2: 300×250 方形 */}
-          <AdBanner
-            type="banner-300x250"
-            adKey={process.env.NEXT_PUBLIC_AD_BANNER_300X250}
-          />
-
-          {/* 广告 3: 468×60 横幅 */}
-          <AdBanner
-            type="banner-468x60"
-            adKey={process.env.NEXT_PUBLIC_AD_BANNER_468X60}
-          />
-        </div>
+        <ArticleFooterAds
+          banner728Key={process.env.NEXT_PUBLIC_AD_BANNER_728X90}
+          banner468Key={process.env.NEXT_PUBLIC_AD_BANNER_468X60}
+        />
       </div>
 
       {/* 右侧广告容器 - Fixed 定位 */}

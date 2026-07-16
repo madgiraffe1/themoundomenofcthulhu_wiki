@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AD_CONFIGS, type BannerAdType } from "./mobileAdConfigs";
 import { useDeferredAdSlot } from "./useDeferredAdSlot";
 
@@ -16,6 +16,7 @@ interface AdBannerProps {
    * 如果提供且为空，则不渲染广告
    */
   adKey?: string;
+  onRenderStateChange?: (hasRenderedContent: boolean) => void;
 }
 
 // 广告加载超时时间（毫秒）
@@ -48,6 +49,13 @@ function enqueueHighPerformanceAdLoad(task: () => Promise<void>) {
   return next;
 }
 
+function hasProviderRenderedContent(container: HTMLElement) {
+  return Array.from(container.children).some((child) => {
+    const tagName = child.tagName.toLowerCase();
+    return tagName !== "script" && tagName !== "style";
+  });
+}
+
 /**
  * 横幅广告组件（动态脚本加载）
  * 使用 Adsterra 横幅广告
@@ -58,6 +66,7 @@ export function AdBanner({
   className = "",
   adKey,
   eager = false,
+  onRenderStateChange,
 }: AdBannerProps) {
   const slotEnabled = Boolean(adKey && adKey !== "0");
   const { ref: containerRef, isActive: isDeferredActive } =
@@ -67,6 +76,28 @@ export function AdBanner({
     });
   const isActive = eager ? slotEnabled : isDeferredActive;
   const scriptLoadedRef = useRef(false);
+  const [hasRenderedContent, setHasRenderedContent] = useState(false);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || !slotEnabled) {
+      setHasRenderedContent(false);
+      onRenderStateChange?.(false);
+      return;
+    }
+
+    const updateRenderedState = () => {
+      const nextHasRenderedContent = hasProviderRenderedContent(container);
+      setHasRenderedContent(nextHasRenderedContent);
+      onRenderStateChange?.(nextHasRenderedContent);
+    };
+
+    updateRenderedState();
+    const observer = new MutationObserver(updateRenderedState);
+    observer.observe(container, { childList: true, subtree: true });
+
+    return () => observer.disconnect();
+  }, [containerRef, onRenderStateChange, slotEnabled, type]);
 
   useEffect(() => {
     if (
@@ -147,14 +178,15 @@ export function AdBanner({
   const config = AD_CONFIGS[type];
 
   return (
-    <div className={`flex justify-center ${className}`}>
+    <div
+      className={`flex justify-center ${hasRenderedContent ? "" : "min-h-0"} ${className}`}
+    >
       <div
         ref={containerRef}
         className="overflow-hidden rounded-xl"
         style={{
           maxWidth: `${config.width}px`,
           width: "100%",
-          minHeight: `${config.height}px`,
         }}
       />
     </div>
